@@ -40,7 +40,7 @@ output "public_ip" {
 
 output "private_ip" {
   description = "Private IP of instance"
-  value       = module.aws_key_pair.private_ip
+  value       = module.ec2_instance.private_ip
 }
 
 output "private_key" {
