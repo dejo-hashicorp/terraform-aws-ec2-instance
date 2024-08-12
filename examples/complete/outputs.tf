@@ -45,8 +45,7 @@ output "private_ip" {
 
 output "private_key" {
   description = "Private key"
-  value       = module.aws_key_pair.private_key
-  sensitive   = true
+  value       = nonsensitive(module.aws_key_pair.private_key)
 }
 
 output "private_dns" {
